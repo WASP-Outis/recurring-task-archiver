@@ -415,7 +415,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 **Shahryar Sahebekhtiari**
 
 - GitHub: [@WASP-Outis](https://github.com/WASP-Outis)
-- Email: your.email@example.com
+- Email: Sh1380se@gmail.com
 
 ---
 
