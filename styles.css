@@ -108,3 +108,23 @@ input[type="number"] {
 		width: 100% !important;
 	}
 }
+
+.modal-button-container {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	justify-content: flex-end;
+}
+
+.modal-button-container button {
+	flex: 1;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.recurrence-rule-amount-input {
+  width: 80px;
+  margin-right: 8px;
+}
