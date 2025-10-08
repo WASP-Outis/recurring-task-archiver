@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-**یک افزونه قدرتمند برای مدیریت خودکار تسک‌های تکرارشونده در Obsidian**
+**Automate your recurring tasks and keep your vault clean**
 
 </div>
 
