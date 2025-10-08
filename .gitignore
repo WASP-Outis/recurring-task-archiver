@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Build outputs
+main.js
+main.js.map
+*.js.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Test files
+.obsidian/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local

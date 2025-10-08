@@ -1,0 +1,11 @@
+{
+  "id": "recurring-task-archiver",
+  "name": "Recurring Task Archiver",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Automatically archive completed recurring tasks and create next instances",
+  "author": "Shahryar Sahebekhtiari",
+  "authorUrl": "https://github.com/WASP-Outis",
+  "isDesktopOnly": false,
+  "css": "styles.css"
+}

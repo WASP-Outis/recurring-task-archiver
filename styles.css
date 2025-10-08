@@ -1,0 +1,110 @@
+/* ========================================
+   Recurring Task Archiver Plugin Styles
+   ======================================== */
+
+/* === RTL Support === */
+[dir="rtl"] {
+	text-align: right;
+}
+
+[dir="rtl"] .setting-item-control {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] .setting-item-info {
+	text-align: right;
+}
+
+/* === Modal Styles === */
+.recurring-task-modal {
+	padding: 20px;
+}
+
+.recurring-task-modal h2 {
+	margin-bottom: 10px;
+}
+
+.recurring-task-modal p {
+	margin-bottom: 20px;
+	color: var(--text-muted);
+}
+
+.modal-button-container {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	justify-content: flex-end;
+}
+
+[dir="rtl"] .modal-button-container {
+	justify-content: flex-start;
+}
+
+.modal-button-container button {
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.modal-button-container button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* === Settings Styles === */
+.recurrence-rule-setting {
+	border-left: 3px solid var(--interactive-accent);
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+[dir="rtl"] .recurrence-rule-setting {
+	border-left: none;
+	border-right: 3px solid var(--interactive-accent);
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+.recurrence-rule-setting .setting-item-control {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+/* === Number Input Styling === */
+input[type="number"] {
+	text-align: center;
+}
+
+/* === Better spacing for settings === */
+.setting-item {
+	padding: 12px 0;
+}
+
+.setting-item-description {
+	font-size: 0.9em;
+	color: var(--text-muted);
+	margin-top: 4px;
+}
+
+/* === Warning/Error Messages === */
+.setting-item-description.warning {
+	color: var(--text-warning);
+}
+
+.setting-item-description.error {
+	color: var(--text-error);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+	.recurrence-rule-setting .setting-item-control {
+		flex-direction: column;
+	}
+	
+	.recurrence-rule-setting input,
+	.recurrence-rule-setting select {
+		width: 100% !important;
+	}
+}

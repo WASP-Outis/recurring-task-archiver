@@ -1,0 +1,96 @@
+{
+  "settings": {
+    "title": "Recurring Task Archiver Settings",
+    "language": {
+      "name": "Language",
+      "desc": "Select the plugin interface language"
+    },
+    "paths": {
+      "header": "File Paths",
+      "template": {
+        "name": "Template File Path",
+        "desc": "Path to the task template file"
+      },
+      "archive": {
+        "name": "Archive Folder Path",
+        "desc": "Folder where completed tasks will be archived"
+      },
+      "useDatedFolders": {
+        "name": "Use Dated Archive Folders",
+        "desc": "Organize archived tasks in dated subfolders (e.g., 2025/01)"
+      },
+      "dateFormat": {
+        "name": "Date Format for Folders",
+        "desc": "Date format for archive subfolders (e.g., YYYY/MM)"
+      }
+    },
+    "behavior": {
+      "header": "Behavior",
+      "confirmRecur": {
+        "name": "Confirm Before Recurring",
+        "desc": "Show confirmation dialog before creating next task instance"
+      },
+      "copySubtasks": {
+        "name": "Copy Subtasks",
+        "desc": "Copy subtasks to new task instance and uncheck them"
+      }
+    },
+    "frontmatter": {
+      "header": "Frontmatter Field Names",
+      "completed": {
+        "name": "Completed Field",
+        "desc": "Frontmatter field name for completion status"
+      },
+      "archived": {
+        "name": "Archived Field",
+        "desc": "Frontmatter field name for archive status"
+      },
+      "dueDate": {
+        "name": "Due Date Field",
+        "desc": "Frontmatter field name for due date"
+      },
+      "recurrence": {
+        "name": "Recurrence Field",
+        "desc": "Frontmatter field name for recurrence rule"
+      },
+      "created": {
+        "name": "Created Field",
+        "desc": "Frontmatter field name for creation date"
+      }
+    }
+  },
+  "modal": {
+    "title": "Task Recurrence",
+    "prompt": "This task is completed. Do you want to create a new instance for the next period?",
+    "yesRecur": "✅ Yes, Recur & Archive",
+    "noArchive": "📦 No, Just Archive",
+    "cancel": "❌ Cancel",
+    "copySubtasks": "Copy subtasks and uncheck them"
+  },
+  "commands": {
+    "processTask": "Process Current Task",
+    "archiveTask": "Archive Current Task (Without Recurrence)"
+  },
+  "recurrence": {
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "biweekly": "Biweekly",
+    "monthly": "Monthly",
+    "quarterly": "Quarterly",
+    "yearly": "Yearly",
+    "weekdays": "Weekdays",
+    "weekends": "Weekends",
+    "none": "None"
+  },
+  "notifications": {
+    "taskProcessed": "✅ Task processed successfully",
+    "taskArchived": "📦 Task archived successfully",
+    "error": "❌ Error processing task",
+    "templateNotFound": "⚠️ Template file not found",
+    "archiveFolderCreated": "📁 Archive folder created",
+    "invalidRecurrence": "⚠️ Invalid recurrence rule",
+    "invalidDate": "⚠️ Invalid date format",
+    "fileLocked": "🔒 File is being processed, please wait",
+    "settingsSaved": "💾 Settings saved successfully"
+  }
+}
