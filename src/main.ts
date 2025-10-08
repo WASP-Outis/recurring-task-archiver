@@ -33,8 +33,6 @@ export default class RecurringTaskArchiverPlugin extends Plugin {
     private debouncedHandleModify: (file: TFile) => void; // 🔥
 
     async onload() {
-        console.log("🔄 Loading Recurring Task Archiver Plugin v1.0.0");
-
         await this.loadSettings();
         this.i18n = initI18n(this.settings.locale);
         this.taskManager = new TaskManager(this.app, this.settings, this.i18n);
@@ -107,8 +105,6 @@ export default class RecurringTaskArchiverPlugin extends Plugin {
                 );
             }
         });
-
-        console.log("✅ Recurring Task Archiver Plugin loaded successfully");
     }
 
     /**
@@ -270,13 +266,11 @@ export default class RecurringTaskArchiverPlugin extends Plugin {
         );
 
         if (this.settings.enableDebugLog) {
-            console.log("💾 تنظیمات ذخیره شد:", this.settings);
+            console.log("💾 Settings saved!", this.settings);
         }
     }
 
     onunload() {
-        console.log("🔄 Unloading Recurring Task Archiver Plugin");
-        
         // پاک کردن تمام قفل‌ها
         this.taskManager.cleanupExpiredLocks();
     }
