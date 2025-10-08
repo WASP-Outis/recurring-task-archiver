@@ -6,6 +6,5 @@
   "description": "Automatically archive completed recurring tasks and create next instances",
   "author": "Shahryar Sahebekhtiari",
   "authorUrl": "https://github.com/WASP-Outis",
-  "isDesktopOnly": false,
-  "css": "styles.css"
+  "isDesktopOnly": false
 }
