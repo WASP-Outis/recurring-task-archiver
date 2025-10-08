@@ -46,17 +46,13 @@ export class RecurrenceConfirmationModal extends Modal {
 
         // دکمه‌ها
         const buttonContainer = contentEl.createDiv({ cls: "modal-button-container" });
-        buttonContainer.style.display = "flex";
-        buttonContainer.style.gap = "10px";
-        buttonContainer.style.marginTop = "20px";
-        buttonContainer.style.justifyContent = "flex-end";
 
         // دکمه تکرار و آرشیو
         const recurButton = buttonContainer.createEl("button", {
             text: this.i18n.modal.yesRecur,
             cls: "mod-cta"
         });
-        recurButton.style.flex = "1";
+
         recurButton.addEventListener("click", () => {
             this.result.action = "recur";
             this.close();
@@ -67,7 +63,7 @@ export class RecurrenceConfirmationModal extends Modal {
         const archiveButton = buttonContainer.createEl("button", {
             text: this.i18n.modal.noArchive
         });
-        archiveButton.style.flex = "1";
+
         archiveButton.addEventListener("click", () => {
             this.result.action = "archive";
             this.close();
@@ -78,7 +74,7 @@ export class RecurrenceConfirmationModal extends Modal {
         const cancelButton = buttonContainer.createEl("button", {
             text: this.i18n.modal.cancel
         });
-        cancelButton.style.flex = "1";
+        
         cancelButton.addEventListener("click", () => {
             this.result.action = "cancel";
             this.close();
