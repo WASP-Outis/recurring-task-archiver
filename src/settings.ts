@@ -85,8 +85,6 @@ export class RecurringTaskSettingTab extends PluginSettingTab {
 						})
 				);
 
-			console.log("📋 Recurrence rules:", this.plugin.settings.recurrenceRules);
-
 			if (!this.plugin.settings.recurrenceRules || this.plugin.settings.recurrenceRules.length === 0) {
 				containerEl.createEl("p", {
 					text: "⚠️ No recurrence rules found. Click Reset to restore defaults.",
@@ -343,8 +341,7 @@ export class RecurringTaskSettingTab extends PluginSettingTab {
 						new Notice("⚠️ Value must be a positive number");
 					}
 				});
-			text.inputEl.style.width = "80px";
-			text.inputEl.style.marginRight = "8px";
+			text.inputEl.addClass('recurrence-rule-amount-input');
 			return text;
 		});
 
