@@ -3,7 +3,7 @@
   "name": "Recurring Task Archiver",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "Automatically archive completed recurring tasks and create next instances",
+  "description": "A powerful plugin for automatically managing recurring tasks.",
   "author": "Shahryar Sahebekhtiari",
   "authorUrl": "https://github.com/WASP-Outis",
   "isDesktopOnly": false
